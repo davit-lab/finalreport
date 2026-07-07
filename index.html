@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ვინილის მხარე B: ქართული არტისტების მომავალი სცენის მიღმა</title>
+  <meta name="description" content="ვრცელი ჟურნალისტური პროექტი ქართული მუსიკის დღევანდელ მდგომარეობაზე, არტისტების გზაზე, სცენის მიღმა არსებულ პრობლემებზე და ქართული მუსიკის მომავალზე.">
+
+  <!-- ქართული + კატალოგის ფონტები -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;600;700;800&family=Noto+Serif+Georgian:wght@400;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- გრეინი / ხმაური -->
+  <div class="grain" aria-hidden="true"></div>
+  <!-- კითხვის პროგრესი -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <!-- კონვერტის ხერხემალი (დესკტოპი) -->
+  <div class="spine" aria-hidden="true"><span>Vinyl · Side B · Georgian Music Dossier</span></div>
+
+  <!-- ზედა მენიუ -->
+  <nav class="nav" id="nav" aria-label="მთავარი ნავიგაცია">
+    <div class="nav__brand"></div>
+    <button class="nav__toggle" id="navToggle" aria-label="მენიუს გახსნა">☰</button>
+    <div class="nav__links"></div>
+  </nav>
+
+  <!-- 1. HERO -->
+  <header class="hero" id="hero"><div class="wrap"></div></header>
+
+  <!-- 2. ტრეკლისტი / შიგთავსი -->
+  <section id="contents" class="contents"><div class="wrap"></div></section>
+
+  <!-- გამყოფი: ღარიდან ქაღალდზე -->
+  <div class="divider divider--onpaper" aria-hidden="true">
+    <svg viewBox="0 0 1200 70" preserveAspectRatio="none">
+      <path class="groove" d="M0,58 C300,20 900,20 1200,58"/>
+      <path class="groove" d="M0,50 C300,14 900,14 1200,50"/>
+      <path class="groove groove--accent" d="M0,42 C300,8 900,8 1200,42"/>
+      <circle class="spindle" cx="600" cy="8" r="3.5"/>
+    </svg>
+  </div>
+
+  <!-- 3. შესავალი (ქაღალდი) -->
+  <section id="intro" class="paper"><div class="wrap"></div></section>
+
+  <!-- 4. კონტექსტი (ქაღალდი) -->
+  <section id="context" class="paper"><div class="wrap"></div></section>
+
+  <!-- გამყოფი: ქაღალდიდან მუქზე -->
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 70" preserveAspectRatio="none">
+      <path class="groove" d="M0,12 C300,50 900,50 1200,12"/>
+      <path class="groove" d="M0,20 C300,56 900,56 1200,20"/>
+      <path class="groove groove--accent" d="M0,28 C300,62 900,62 1200,28"/>
+      <circle class="spindle" cx="600" cy="62" r="3.5"/>
+    </svg>
+  </div>
+
+  <!-- 5. არტისტები -->
+  <section id="artists"><div class="wrap"></div></section>
+
+  <!-- 6. პრობლემები -->
+  <section id="problems" class="problems"><div class="wrap"></div></section>
+
+  <!-- 7. Open Air -->
+  <section id="openair" class="openair"><div class="wrap"></div></section>
+
+  <!-- გამყოფი: მუქიდან ქაღალდზე -->
+  <div class="divider divider--onpaper" aria-hidden="true">
+    <svg viewBox="0 0 1200 70" preserveAspectRatio="none">
+      <path class="groove" d="M0,58 C300,20 900,20 1200,58"/>
+      <path class="groove" d="M0,50 C300,14 900,14 1200,50"/>
+      <path class="groove groove--accent" d="M0,42 C300,8 900,8 1200,42"/>
+      <circle class="spindle" cx="600" cy="8" r="3.5"/>
+    </svg>
+  </div>
+
+  <!-- 8. მსმენელები (ქაღალდი) -->
+  <section id="listeners" class="paper"><div class="wrap"></div></section>
+
+  <!-- 8.1 მსმენელის პროფილი: ფატიმა ალანია (ქაღალდი) -->
+  <section id="fatima" class="paper fatima-profile"><div class="wrap"></div></section>
+
+  <!-- გამყოფი: ქაღალდიდან მუქზე -->
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 70" preserveAspectRatio="none">
+      <path class="groove" d="M0,12 C300,50 900,50 1200,12"/>
+      <path class="groove" d="M0,20 C300,56 900,56 1200,20"/>
+      <path class="groove groove--accent" d="M0,28 C300,62 900,62 1200,28"/>
+      <circle class="spindle" cx="600" cy="62" r="3.5"/>
+    </svg>
+  </div>
+
+  <!-- 9. ვიდეოები -->
+  <section id="videos"><div class="wrap"></div></section>
+
+  <!-- 10. გალერეა -->
+  <section id="gallery"><div class="wrap"></div></section>
+
+  <!-- 11. დასკვნა -->
+  <section id="conclusion" class="conclusion"><div class="wrap"></div></section>
+
+  <!-- 12. Footer -->
+  <footer class="footer" id="footer"><div class="wrap"></div></footer>
+
+  <!-- სკრიპტები: ჯერ ტექსტები, მერე რენდერი -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
